@@ -51,6 +51,23 @@
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
+						<AuxBus Name="Cave" ID="{6F673BA5-0EAF-48F9-9A33-91547C7BC113}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Church_Small_Wood" ID="{940CCB47-F031-4C6A-B0E6-726CAC418C02}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+						<AuxBus Name="CaveEntrance" ID="{CAB3F01E-D3FE-4EAA-8A6F-423C6966FA01}"/>
+						<AuxBus Name="Dungeon_Core" ID="{963287B9-802A-43EF-A7FB-93E7D056D44D}"/>
+						<AuxBus Name="Dungeon_Entrance" ID="{D29F572F-4C18-43B9-84F6-8B5799890130}"/>
+						<AuxBus Name="Dungeon_Forge" ID="{11BCBE2A-9813-4E6A-AEF2-DD53F1FBD9AD}"/>
+						<AuxBus Name="Dungeon_Library" ID="{5EA1C16A-6193-44CC-A981-698AF21A1458}"/>
+						<AuxBus Name="Dungeon_Library_Statue" ID="{2BF694C4-FE4F-4ACF-8417-F2A3D1654B0C}"/>
+						<AuxBus Name="Dungeon_MezzanineRoom" ID="{645A6AF7-842E-45C7-B467-A89F69190BB4}"/>
+						<AuxBus Name="Dungeon_MezzanineRoomEntrance" ID="{37C8F720-D952-4E77-AA57-995A3636D950}"/>
+						<AuxBus Name="Dungeon_PathToForge" ID="{66767BCA-2359-4B54-B4DD-91C936454155}"/>
+						<AuxBus Name="Dungeon_RoadToCore" ID="{2025B2A5-3372-4417-9528-617EC955C510}"/>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="RTPC">
