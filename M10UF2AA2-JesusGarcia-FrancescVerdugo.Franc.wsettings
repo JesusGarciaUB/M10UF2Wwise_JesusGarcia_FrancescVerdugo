@@ -24,6 +24,9 @@
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 					</ValueList>
 				</Property>
+				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="lFlyiPOXA064g3mxYoMm1A=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -32,7 +35,8 @@
 				<Property Name="MeterView\MeterMode1Viewpoint3" Type="int32" Value="0"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
-				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAACQ6tCqvQAAAEAM2N1mAgAAIAAAAAAAAABIyjbdZgIAACwDisNmAgAAbwAAAAAAAADA1YDqZgIAADA6VtRmAgAAAgAAAAAAAAAQAAAAAAAAAAAAp8NmAgAAbwAAAAAAAABAAtHUZgIAACAAACBmAgAAMBnY3WYCAAD60gAo/X8AAA=="/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAACQ6tCqvQAAALC2gupmAgAADAAAAAAAAAA4ZHTSZgIAACgDisNmAgAAWwAAAAAAAADAzYLqZgIAAPBidNJmAgAAMGR00mYCAAAAAIrDZgIAAAAAp8NmAgAAWwAAAAAAAACgL5ndZgIAAAwAAAxmAgAAYM6C6mYCAAAA/wD//X8AAA=="/>
+				<Property Name="PluginUserAcknowledge\SoundSeedAir" Type="bool" Value="True"/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
