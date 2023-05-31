@@ -19,6 +19,15 @@
 						<Switch Name="Rubble" ID="{B83CE623-2808-4BFD-B3A1-D41A9F5DA1A5}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Player_Weapon_Type" ID="{62EC3C2D-4935-436C-BE57-1BEF12242B08}">
+					<ChildrenList>
+						<Switch Name="Axe" ID="{1AB40C75-6C90-45AE-9112-5896F52DCBE2}"/>
+						<Switch Name="Dagger" ID="{A61D508D-9144-48F1-AA73-EFB5B6484EB8}"/>
+						<Switch Name="Hammer" ID="{D17CB32D-1FEC-449A-B6CC-6B77175B3A6A}"/>
+						<Switch Name="PickAxe" ID="{F22182F4-1BBB-4B5A-9EB4-4C07DF4DA1C7}"/>
+						<Switch Name="Sword" ID="{D513910C-A43D-4F04-BD5D-FE7AC48D2D79}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
