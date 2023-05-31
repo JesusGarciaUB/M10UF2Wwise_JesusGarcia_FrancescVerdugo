@@ -3,6 +3,17 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{1E0BBB16-0A0E-4022-9394-490792F62142}">
 			<PropertyList>
+				<Property Name="Event Action List\{0C68AB3D-575C-45ED-82D2-700E18744907}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{32DBAA05-94C7-48CF-BEBD-51996ABDE354}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4069B384-0037-4C40-8379-AA521B367C79}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4DA30C93-8393-4AE3-ACF9-0AABEB666F22}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4F891923-4E6A-49FC-96E7-17C0FDA12FCA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{51AA3602-CD19-4189-86B8-6B230F16D25E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{630CA81F-D19F-4142-ABB1-752F58260001}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{66E8E39E-2026-4A27-8283-472A8D1D06B3}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8A3E8C2A-AE22-4B5A-BDEC-DC1F5AFC63BD}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C591B4D5-6953-4167-933E-3E740A9D649C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{EC7265A6-2EC8-499C-A7DF-948AE2DC3276}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>
@@ -21,7 +32,7 @@
 				<Property Name="MeterView\MeterMode1Viewpoint3" Type="int32" Value="0"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
-				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADJfXj2/H8AAAEAAAAAAAAAW/CgUP1/AAAAJljSZgIAAEAIk8NmAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXYN49vx/AADQNXTdZgIAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=="/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAACQ6tCqvQAAAAAa0dRmAgAAAgAAAAAAAADIBWjQZgIAACgDisNmAgAAUQAAAAAAAAAQ9NHUZgIAAOACaNBmAgAAwAVo0GYCAAAAAIrDZgIAAAAAp8NmAgAAUQAAAAAAAAAgBNHUZgIAAAIAAAJmAgAA8PPR1GYCAAB55gCf/X8AAA=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
