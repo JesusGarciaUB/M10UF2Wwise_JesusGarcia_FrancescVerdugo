@@ -15,6 +15,14 @@
 						<State Name="Woodlands" ID="{2A53E230-196B-4CCB-AE7F-B9BC0FCADE69}"/>
 						<State Name="WwizardHouse" ID="{B7983A8D-9107-4546-A5F3-2F3B1F712EAF}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{6954D0C4-A10E-45CD-B24B-809AF35EA063}"/>
+							<EndState Name="Cave" ID="{8A2AA3D3-7015-4CE5-8591-4FEB56CF9BDB}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
