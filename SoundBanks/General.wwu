@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{68CF29F1-6734-4D76-BE6D-8DEE7F874B44}" SchemaVersion="110" RootDocumentID="{D438F966-6115-4D77-AE20-BF5F6226198F}" ParentDocumentID="{D438F966-6115-4D77-AE20-BF5F6226198F}">
+	<SoundBanks>
+		<WorkUnit Name="General" ID="{68CF29F1-6734-4D76-BE6D-8DEE7F874B44}" OwnerID="{D438F966-6115-4D77-AE20-BF5F6226198F}" PersistMode="Nested">
+			<ChildrenList>
+				<SoundBank Name="General" ID="{FC7A6A0E-1167-46B2-9E67-2D5BC1A81222}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Player_Footstep" ID="{6EEE446B-391E-44B8-B66A-092C2C166CD7}" WorkUnitID="{01FF088E-9212-4180-BFB4-6F4B24113C97}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_All" ID="{4C010FAE-1115-47E3-8DAB-0A1D8DBF532A}" WorkUnitID="{01FF088E-9212-4180-BFB4-6F4B24113C97}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_WeaponImpact" ID="{533248E0-3E0F-4CBF-99D3-BC153CB8B42E}" WorkUnitID="{01FF088E-9212-4180-BFB4-6F4B24113C97}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

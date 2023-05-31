@@ -9,223 +9,9 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{EC88C4AB-A727-1CCD-34E0-6278283B741F}">
-			<ShortName>Init</ShortName>
-			<Path>Init.bnk</Path>
-			<Plugins>
-				<ShareSets>
-					<Plugin Id="484890516" Name="Church_Small_Wood" LibName="Wwise RoomVerb" LibId="7733251"/>
-				</ShareSets>
-				<AudioDevices>
-					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
-					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
-				</AudioDevices>
-			</Plugins>
-			<Busses>
-				<Bus Id="493417818" Name="Music Audio Bus"/>
-				<Bus Id="3803692087" Name="Master Audio Bus"/>
-			</Busses>
-			<AuxBusses>
-				<AuxBus Id="243931001" Name="Dungeon_Forge"/>
-				<AuxBus Id="425911480" Name="Dungeon_Library_Statue"/>
-				<AuxBus Id="567469275" Name="Dungeon_PathToForge"/>
-				<AuxBus Id="1156828694" Name="Dungeon_Entrance"/>
-				<AuxBus Id="1941785149" Name="Dungeon_Library"/>
-				<AuxBus Id="2026127448" Name="Dungeon_MezzanineRoomEntrance"/>
-				<AuxBus Id="2106540524" Name="Dungeon_RoadToCore"/>
-				<AuxBus Id="2213850905" Name="Dungeon_Core"/>
-				<AuxBus Id="3352684520" Name="CaveEntrance">
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="484890516"/>
-						</ShareSets>
-					</PluginRefs>
-				</AuxBus>
-				<AuxBus Id="4122393694" Name="Cave">
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="484890516"/>
-						</ShareSets>
-					</PluginRefs>
-				</AuxBus>
-				<AuxBus Id="4158999182" Name="Dungeon_MezzanineRoom"/>
-			</AuxBusses>
-			<GameParameters>
-				<GameParameter Id="207908541" Name="Time_of_Day"/>
-				<GameParameter Id="822163944" Name="SS_Air_RPM"/>
-				<GameParameter Id="1029930033" Name="SS_Air_Fury"/>
-				<GameParameter Id="1333239961" Name="MenuSlider_Master_Volume"/>
-				<GameParameter Id="1351367891" Name="SS_Air_Fear"/>
-				<GameParameter Id="2471758783" Name="Player_MovementSpeed"/>
-				<GameParameter Id="2642438544" Name="MenuSlider_Music_Volume"/>
-				<GameParameter Id="2648548617" Name="SS_Air_Month"/>
-				<GameParameter Id="3002758120" Name="SS_Air_Freefall"/>
-				<GameParameter Id="3074696722" Name="SS_Air_Size"/>
-				<GameParameter Id="3203397129" Name="SS_Air_TimeOfDay"/>
-				<GameParameter Id="3715662592" Name="SS_Air_Storm"/>
-				<GameParameter Id="3847924954" Name="SS_Air_Presence"/>
-				<GameParameter Id="4160247818" Name="SS_Air_Turbulence"/>
-			</GameParameters>
-			<StateGroups>
-				<StateGroup Id="2106907484" Name="Music_Regions">
-					<States>
-						<State Id="608898761" Name="Dungeon"/>
-						<State Id="748895195" Name="None"/>
-						<State Id="1421251628" Name="Woodlands"/>
-						<State Id="1850388778" Name="Desert"/>
-						<State Id="3132368115" Name="WwizardHouse"/>
-						<State Id="3160623154" Name="Silent"/>
-						<State Id="3424056949" Name="Nowhere"/>
-						<State Id="3945572659" Name="Village"/>
-						<State Id="4122393694" Name="Cave"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
-			<SwitchGroups>
-				<SwitchGroup Id="3251833556" Name="Player_Weapon_Type">
-					<Switches>
-						<Switch Id="490825222" Name="PickAxe"/>
-						<Switch Id="703486095" Name="Hammer"/>
-						<Switch Id="765201635" Name="Axe"/>
-						<Switch Id="2454616260" Name="Sword"/>
-						<Switch Id="3732162827" Name="Dagger"/>
-					</Switches>
-				</SwitchGroup>
-				<SwitchGroup Id="4064446173" Name="Surface_Type">
-					<Switches>
-						<Switch Id="286660663" Name="Rubble"/>
-						<Switch Id="442447909" Name="Barrel"/>
-						<Switch Id="582824249" Name="Leaves"/>
-						<Switch Id="803837735" Name="Sand"/>
-						<Switch Id="1216965916" Name="Stone"/>
-						<Switch Id="2058049674" Name="Wood"/>
-						<Switch Id="2195636714" Name="Dirt"/>
-						<Switch Id="2473969246" Name="Metal"/>
-						<Switch Id="2654748154" Name="Water"/>
-						<Switch Id="3098439042" Name="Crate"/>
-						<Switch Id="3444057113" Name="Crystal"/>
-						<Switch Id="4248645337" Name="Grass"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
-			<AcousticTextures>
-				<AcousticTexture Id="504532776" Name="Brick">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="513139656" Name="Mountain">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="841620460" Name="Concrete">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="1755085759" Name="Wood_Deep">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="1873957695" Name="Anechoic">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="1970351858" Name="Fabric">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="2058049674" Name="Wood">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="2412606308" Name="Carpet">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="2637588553" Name="Tile">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="2928161104" Name="Curtains">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="3670307564" Name="Drywall">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="4262522749" Name="Wood_Bright">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
-					</Properties>
-				</AcousticTexture>
-			</AcousticTextures>
-		</SoundBank>
-		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{A0F03B00-FC6B-CA0B-9770-438B8543D6C6}">
-			<ShortName>New_SoundBank</ShortName>
-			<Path>New_SoundBank.bnk</Path>
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{E9F46C6C-2B81-DA1D-0994-A8517F8E9C1D}">
+			<ShortName>General</ShortName>
+			<Path>General.bnk</Path>
 			<Media>
 				<File Id="1227526" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Walk\Water\BAS_Player_Footstep_water_walk_04.wav</ShortName>
@@ -235,25 +21,9 @@
 					<ShortName>Impacts\BAS_Impact_Dagger_SurfaceType_Leaves.wav</ShortName>
 					<CachePath>SFX/Impacts/BAS_Impact_Dagger_SurfaceType_Leaves_10C4C929.wem</CachePath>
 				</File>
-				<File Id="27821622" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ambient_Background\BAS_amb_village_day_background_loop_01.wav</ShortName>
-					<CachePath>SFX/Ambient_Background/BAS_amb_village_day_background_loop_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="43732333" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI\BAS_Button_Close.wav</ShortName>
-					<CachePath>SFX/UI/BAS_Button_Close_10C4C929.wem</CachePath>
-				</File>
-				<File Id="63653638" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI\BAS_Button_Teleport.wav</ShortName>
-					<CachePath>SFX/UI/BAS_Button_Teleport_10C4C929.wem</CachePath>
-				</File>
 				<File Id="65213350" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Impacts\BAS_Impact_Dagger_SurfaceType_Stone.wav</ShortName>
 					<CachePath>SFX/Impacts/BAS_Impact_Dagger_SurfaceType_Stone_10C4C929.wem</CachePath>
-				</File>
-				<File Id="66782343" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI\BAS_Inventory_Scroll.wav</ShortName>
-					<CachePath>SFX/UI/BAS_Inventory_Scroll_10C4C929.wem</CachePath>
 				</File>
 				<File Id="79153278" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Walk\Stone\BAS_Player_Footstep_stone_walk_04.wav</ShortName>
@@ -287,10 +57,6 @@
 					<ShortName>Impacts\BAS_Impact_Hammer_SurfaceType_Barrel.wav</ShortName>
 					<CachePath>SFX/Impacts/BAS_Impact_Hammer_SurfaceType_Barrel_10C4C929.wem</CachePath>
 				</File>
-				<File Id="149706138" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI\BAS_Inventory_Close.wav</ShortName>
-					<CachePath>SFX/UI/BAS_Inventory_Close_10C4C929.wem</CachePath>
-				</File>
 				<File Id="156522071" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Impacts\BAS_Impact_Axe_SurfaceType_Stone.wav</ShortName>
 					<CachePath>SFX/Impacts/BAS_Impact_Axe_SurfaceType_Stone_10C4C929.wem</CachePath>
@@ -319,10 +85,6 @@
 					<ShortName>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Run/Rubble/BAS_Player_Footstep_rubble_run_02_10C4C929.wem</CachePath>
 				</File>
-				<File Id="182450406" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI\BAS_Inventory_Select.wav</ShortName>
-					<CachePath>SFX/UI/BAS_Inventory_Select_10C4C929.wem</CachePath>
-				</File>
 				<File Id="189352670" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Walk\Rubble\BAS_Player_Footstep_rubble_walk_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Walk/Rubble/BAS_Player_Footstep_rubble_walk_02_10C4C929.wem</CachePath>
@@ -338,14 +100,6 @@
 				<File Id="195495518" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Impacts\BAS_Impact_PickAxe_SurfaceType_Barrel.wav</ShortName>
 					<CachePath>SFX/Impacts/BAS_Impact_PickAxe_SurfaceType_Barrel_10C4C929.wem</CachePath>
-				</File>
-				<File Id="201974497" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ambient_Background\BAS_amb_village_night_background_loop_01.wav</ShortName>
-					<CachePath>SFX/Ambient_Background/BAS_amb_village_night_background_loop_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="216100461" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ambient_Background\BAS_amb_desert_day_background_loop_01.wav</ShortName>
-					<CachePath>SFX/Ambient_Background/BAS_amb_desert_day_background_loop_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="241724057" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Impacts\BAS_Impact_Sword_SurfaceType_Stone.wav</ShortName>
@@ -395,17 +149,9 @@
 					<ShortName>Footsteps\Walk\Grass\BAS_Player_Footstep_grass_walk_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Walk/Grass/BAS_Player_Footstep_grass_walk_01_10C4C929.wem</CachePath>
 				</File>
-				<File Id="333226267" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI\BAS_Inventory_Open.wav</ShortName>
-					<CachePath>SFX/UI/BAS_Inventory_Open_10C4C929.wem</CachePath>
-				</File>
 				<File Id="352975741" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Run/Dirt/BAS_Player_Footstep_dirt_run_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="355796812" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI\BAS_QuestRoll_Open.wav</ShortName>
-					<CachePath>SFX/UI/BAS_QuestRoll_Open_10C4C929.wem</CachePath>
 				</File>
 				<File Id="356717099" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Walk\Sand\BAS_Player_Footstep_sand_walk_01.wav</ShortName>
@@ -426,10 +172,6 @@
 				<File Id="392564188" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Walk\Sand\BAS_Player_Footstep_sand_walk_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Walk/Sand/BAS_Player_Footstep_sand_walk_02_10C4C929.wem</CachePath>
-				</File>
-				<File Id="403549381" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI\BAS_Button_Enter.wav</ShortName>
-					<CachePath>SFX/UI/BAS_Button_Enter_10C4C929.wem</CachePath>
 				</File>
 				<File Id="406365616" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Run\Water\BAS_Player_Footstep_water_run_04.wav</ShortName>
@@ -563,10 +305,6 @@
 					<ShortName>Impacts\BAS_Impact_Axe_SurfaceType_Dirt.wav</ShortName>
 					<CachePath>SFX/Impacts/BAS_Impact_Axe_SurfaceType_Dirt_10C4C929.wem</CachePath>
 				</File>
-				<File Id="738807413" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI\BAS_Button_Over.wav</ShortName>
-					<CachePath>SFX/UI/BAS_Button_Over_10C4C929.wem</CachePath>
-				</File>
 				<File Id="751193921" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Impacts\BAS_Impact_Sword_SurfaceType_Grass.wav</ShortName>
 					<CachePath>SFX/Impacts/BAS_Impact_Sword_SurfaceType_Grass_10C4C929.wem</CachePath>
@@ -582,10 +320,6 @@
 				<File Id="785882235" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Run/Stone/BAS_Player_Footstep_stone_run_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="792550329" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ambient_Background\BAS_amb_dungeon_day_background_loop_01.wav</ShortName>
-					<CachePath>SFX/Ambient_Background/BAS_amb_dungeon_day_background_loop_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="793061287" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_05.wav</ShortName>
@@ -651,10 +385,6 @@
 					<ShortName>Footsteps\Walk\Stone\BAS_Player_Footstep_stone_walk_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Walk/Stone/BAS_Player_Footstep_stone_walk_03_10C4C929.wem</CachePath>
 				</File>
-				<File Id="998683490" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ambient_Background\BAS_amb_cave_background_LP.wav</ShortName>
-					<CachePath>SFX/Ambient_Background/BAS_amb_cave_background_LP_10C4C929.wem</CachePath>
-				</File>
 				<File Id="1012861017" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Walk\Sand\BAS_Player_Footstep_sand_walk_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Walk/Sand/BAS_Player_Footstep_sand_walk_03_10C4C929.wem</CachePath>
@@ -695,18 +425,6 @@
 					<ShortName>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Run/Stone/BAS_Player_Footstep_stone_run_02_10C4C929.wem</CachePath>
 				</File>
-				<File Id="1055879430" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ambient_Background\BAS_amb_pineforest_night_background_loop_01.wav</ShortName>
-					<CachePath>SFX/Ambient_Background/BAS_amb_pineforest_night_background_loop_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1056898678" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ambient_Background\BAS_amb_desert_night_background_loop_01.wav</ShortName>
-					<CachePath>SFX/Ambient_Background/BAS_amb_desert_night_background_loop_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1060155956" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI\BAS_QuestRoll_Close.wav</ShortName>
-					<CachePath>SFX/UI/BAS_QuestRoll_Close_10C4C929.wem</CachePath>
-				</File>
 				<File Id="1061349903" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Run\Water\BAS_Player_Footstep_water_run_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Run/Water/BAS_Player_Footstep_water_run_01_10C4C929.wem</CachePath>
@@ -725,47 +443,6 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3664581270" Name="Ambient_Campfire_Play"/>
-				<Event Id="100151336" Name="Ambient_Campfire_Stop"/>
-				<Event Id="2355650095" Name="Ambient_Crystal_Hum"/>
-				<Event Id="4275106484" Name="Ambient_Lava"/>
-				<Event Id="1331382810" Name="Ambient_Region_Cave">
-					<MediaRefs>
-						<MediaRef Id="998683490"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3408705206" Name="Ambient_Region_Desert">
-					<MediaRefs>
-						<MediaRef Id="216100461"/>
-						<MediaRef Id="1056898678"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="4077685701" Name="Ambient_Region_Dungeon">
-					<MediaRefs>
-						<MediaRef Id="792550329"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="808171864" Name="Ambient_Region_PineForest">
-					<MediaRefs>
-						<MediaRef Id="1055879430"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2752753183" Name="Ambient_Region_Village">
-					<MediaRefs>
-						<MediaRef Id="27821622"/>
-						<MediaRef Id="201974497"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1049266392" Name="Ambient_Region_Woodlands"/>
-				<Event Id="2258053876" Name="Ambient_River"/>
-				<Event Id="120976108" Name="Ambient_Torch"/>
-				<Event Id="2644063196" Name="Ambient_WaterDrop"/>
-				<Event Id="1934835592" Name="Ambient_Waterfall"/>
-				<Event Id="2208964750" Name="Ambient_Windmill"/>
-				<Event Id="4254124015" Name="Destruction_Container"/>
-				<Event Id="448719855" Name="Destruction_Crystal_Destroy"/>
-				<Event Id="1999886838" Name="Destruction_Rock_Destroy"/>
-				<Event Id="2541270269" Name="Destruction_VolcanicBoulder_Impact"/>
 				<Event Id="2453392179" Name="Player_Footstep">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -1096,95 +773,9 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3240473869" Name="Quest_Complete">
-					<MediaRefs>
-						<MediaRef Id="403549381"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="844130829" Name="Quest_CompleteCollection">
-					<MediaRefs>
-						<MediaRef Id="403549381"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="452547817" Name="Stop_All"/>
-				<Event Id="156563189" Name="UI_Button_Down">
-					<MediaRefs>
-						<MediaRef Id="738807413"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="18309885" Name="UI_Button_Enter">
-					<MediaRefs>
-						<MediaRef Id="403549381"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2325560497" Name="UI_Button_Exit">
-					<MediaRefs>
-						<MediaRef Id="43732333"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="15662850" Name="UI_Button_Up">
-					<MediaRefs>
-						<MediaRef Id="738807413"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2278290679" Name="UI_Inventory_Close">
-					<MediaRefs>
-						<MediaRef Id="149706138"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2199611969" Name="UI_Inventory_Open">
-					<MediaRefs>
-						<MediaRef Id="333226267"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3749307760" Name="UI_Inventory_Roll">
-					<MediaRefs>
-						<MediaRef Id="66782343"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3237189652" Name="UI_Menu_Pause">
-					<MediaRefs>
-						<MediaRef Id="333226267"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1464993479" Name="UI_Menu_Resume">
-					<MediaRefs>
-						<MediaRef Id="149706138"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3474566310" Name="UI_Menu_Select">
-					<MediaRefs>
-						<MediaRef Id="182450406"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="750089663" Name="UI_Menu_Teleport">
-					<MediaRefs>
-						<MediaRef Id="63653638"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="808893336" Name="UI_QuestRoll_Close">
-					<MediaRefs>
-						<MediaRef Id="1060155956"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2792117052" Name="UI_QuestRoll_Hide">
-					<MediaRefs>
-						<MediaRef Id="66782343"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="949395292" Name="UI_QuestRoll_Open">
-					<MediaRefs>
-						<MediaRef Id="355796812"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3699139167" Name="UI_QuestRoll_Show">
-					<MediaRefs>
-						<MediaRef Id="66782343"/>
-					</MediaRefs>
-				</Event>
 			</Events>
 			<GameParameters>
-				<GameParameter Id="207908541" Name="Time_of_Day"/>
 				<GameParameter Id="2471758783" Name="Player_MovementSpeed"/>
 			</GameParameters>
 			<SwitchGroups>
@@ -1215,6 +806,341 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
+		<SoundBank Id="608898761" Type="User" Language="SFX" Hash="{172184F2-A45B-E993-BBBE-3D470C385739}">
+			<ShortName>Dungeon</ShortName>
+			<Path>Dungeon.bnk</Path>
+			<Media>
+				<File Id="792550329" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambient_Background\BAS_amb_dungeon_day_background_loop_01.wav</ShortName>
+					<CachePath>SFX/Ambient_Background/BAS_amb_dungeon_day_background_loop_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4077685701" Name="Ambient_Region_Dungeon">
+					<MediaRefs>
+						<MediaRef Id="792550329"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1999886838" Name="Destruction_Rock_Destroy"/>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="207908541" Name="Time_of_Day"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{EC88C4AB-A727-1CCD-34E0-6278283B741F}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="484890516" Name="Church_Small_Wood" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="493417818" Name="Music Audio Bus"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<AuxBusses>
+				<AuxBus Id="243931001" Name="Dungeon_Forge"/>
+				<AuxBus Id="425911480" Name="Dungeon_Library_Statue"/>
+				<AuxBus Id="567469275" Name="Dungeon_PathToForge"/>
+				<AuxBus Id="1156828694" Name="Dungeon_Entrance"/>
+				<AuxBus Id="1941785149" Name="Dungeon_Library"/>
+				<AuxBus Id="2026127448" Name="Dungeon_MezzanineRoomEntrance"/>
+				<AuxBus Id="2106540524" Name="Dungeon_RoadToCore"/>
+				<AuxBus Id="2213850905" Name="Dungeon_Core"/>
+				<AuxBus Id="3352684520" Name="CaveEntrance">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="484890516"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="4122393694" Name="Cave">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="484890516"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="4158999182" Name="Dungeon_MezzanineRoom"/>
+			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="207908541" Name="Time_of_Day"/>
+				<GameParameter Id="822163944" Name="SS_Air_RPM"/>
+				<GameParameter Id="1029930033" Name="SS_Air_Fury"/>
+				<GameParameter Id="1333239961" Name="MenuSlider_Master_Volume"/>
+				<GameParameter Id="1351367891" Name="SS_Air_Fear"/>
+				<GameParameter Id="2471758783" Name="Player_MovementSpeed"/>
+				<GameParameter Id="2642438544" Name="MenuSlider_Music_Volume"/>
+				<GameParameter Id="2648548617" Name="SS_Air_Month"/>
+				<GameParameter Id="3002758120" Name="SS_Air_Freefall"/>
+				<GameParameter Id="3074696722" Name="SS_Air_Size"/>
+				<GameParameter Id="3203397129" Name="SS_Air_TimeOfDay"/>
+				<GameParameter Id="3715662592" Name="SS_Air_Storm"/>
+				<GameParameter Id="3847924954" Name="SS_Air_Presence"/>
+				<GameParameter Id="4160247818" Name="SS_Air_Turbulence"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2106907484" Name="Music_Regions">
+					<States>
+						<State Id="608898761" Name="Dungeon"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1421251628" Name="Woodlands"/>
+						<State Id="1850388778" Name="Desert"/>
+						<State Id="3132368115" Name="WwizardHouse"/>
+						<State Id="3160623154" Name="Silent"/>
+						<State Id="3424056949" Name="Nowhere"/>
+						<State Id="3945572659" Name="Village"/>
+						<State Id="4122393694" Name="Cave"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="3251833556" Name="Player_Weapon_Type">
+					<Switches>
+						<Switch Id="490825222" Name="PickAxe"/>
+						<Switch Id="703486095" Name="Hammer"/>
+						<Switch Id="765201635" Name="Axe"/>
+						<Switch Id="2454616260" Name="Sword"/>
+						<Switch Id="3732162827" Name="Dagger"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="4064446173" Name="Surface_Type">
+					<Switches>
+						<Switch Id="286660663" Name="Rubble"/>
+						<Switch Id="442447909" Name="Barrel"/>
+						<Switch Id="582824249" Name="Leaves"/>
+						<Switch Id="803837735" Name="Sand"/>
+						<Switch Id="1216965916" Name="Stone"/>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="2195636714" Name="Dirt"/>
+						<Switch Id="2473969246" Name="Metal"/>
+						<Switch Id="2654748154" Name="Water"/>
+						<Switch Id="3098439042" Name="Crate"/>
+						<Switch Id="3444057113" Name="Crystal"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
+		</SoundBank>
+		<SoundBank Id="1421251628" Type="User" Language="SFX" Hash="{BBA5150F-A63A-BB31-9952-AA4B463FB6A1}">
+			<ShortName>Woodlands</ShortName>
+			<Path>Woodlands.bnk</Path>
+			<Events>
+				<Event Id="1049266392" Name="Ambient_Region_Woodlands"/>
+				<Event Id="1934835592" Name="Ambient_Waterfall"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1850388778" Type="User" Language="SFX" Hash="{9C561C84-2900-F11C-9647-9D6E79E6B531}">
+			<ShortName>Desert</ShortName>
+			<Path>Desert.bnk</Path>
+			<Media>
+				<File Id="216100461" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambient_Background\BAS_amb_desert_day_background_loop_01.wav</ShortName>
+					<CachePath>SFX/Ambient_Background/BAS_amb_desert_day_background_loop_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1056898678" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambient_Background\BAS_amb_desert_night_background_loop_01.wav</ShortName>
+					<CachePath>SFX/Ambient_Background/BAS_amb_desert_night_background_loop_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3408705206" Name="Ambient_Region_Desert">
+					<MediaRefs>
+						<MediaRef Id="216100461"/>
+						<MediaRef Id="1056898678"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2541270269" Name="Destruction_VolcanicBoulder_Impact"/>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="207908541" Name="Time_of_Day"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="2482365692" Type="User" Language="SFX" Hash="{0FA99D90-5347-65B9-A739-EDE99292EA93}">
+			<ShortName>PineForest</ShortName>
+			<Path>PineForest.bnk</Path>
+			<Media>
+				<File Id="1055879430" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambient_Background\BAS_amb_pineforest_night_background_loop_01.wav</ShortName>
+					<CachePath>SFX/Ambient_Background/BAS_amb_pineforest_night_background_loop_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="808171864" Name="Ambient_Region_PineForest">
+					<MediaRefs>
+						<MediaRef Id="1055879430"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="207908541" Name="Time_of_Day"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="3945572659" Type="User" Language="SFX" Hash="{0CA5A6F1-EE28-9489-3919-76DA9969C794}">
+			<ShortName>Village</ShortName>
+			<Path>Village.bnk</Path>
+			<Media>
+				<File Id="27821622" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambient_Background\BAS_amb_village_day_background_loop_01.wav</ShortName>
+					<CachePath>SFX/Ambient_Background/BAS_amb_village_day_background_loop_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="201974497" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambient_Background\BAS_amb_village_night_background_loop_01.wav</ShortName>
+					<CachePath>SFX/Ambient_Background/BAS_amb_village_night_background_loop_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2752753183" Name="Ambient_Region_Village">
+					<MediaRefs>
+						<MediaRef Id="27821622"/>
+						<MediaRef Id="201974497"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2258053876" Name="Ambient_River"/>
+				<Event Id="2208964750" Name="Ambient_Windmill"/>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="207908541" Name="Time_of_Day"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="4122393694" Type="User" Language="SFX" Hash="{DA3A135F-EC2E-CC09-5A46-C65ABC0807AE}">
+			<ShortName>Cave</ShortName>
+			<Path>Cave.bnk</Path>
+			<Media>
+				<File Id="998683490" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambient_Background\BAS_amb_cave_background_LP.wav</ShortName>
+					<CachePath>SFX/Ambient_Background/BAS_amb_cave_background_LP_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1331382810" Name="Ambient_Region_Cave">
+					<MediaRefs>
+						<MediaRef Id="998683490"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2644063196" Name="Ambient_WaterDrop"/>
+				<Event Id="448719855" Name="Destruction_Crystal_Destroy"/>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{750807FB-3410-2EAC-7E07-36A9738AD1AA}</FileHash>
+	<FileHash>{5D46A47D-9F4A-F915-6DA4-3D8F7D968161}</FileHash>
 </SoundBanksInfo>
