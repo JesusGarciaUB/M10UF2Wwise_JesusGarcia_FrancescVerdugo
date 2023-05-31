@@ -1180,9 +1180,6 @@
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Surface_Type" ID="{08C62BCA-03A4-4809-9AB4-758EDC205F63}" WorkUnitID="{DACDC791-5019-4232-A9A2-FB3DD68542BF}"/>
 								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Cave" ID="{6F673BA5-0EAF-48F9-9A33-91547C7BC113}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="Dirt" ID="{1B57F982-8BF8-4F56-BE59-AC1F36C6F0D1}" ShortID="1011496392">

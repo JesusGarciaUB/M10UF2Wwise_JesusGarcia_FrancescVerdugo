@@ -58,7 +58,13 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
-						<AuxBus Name="CaveEntrance" ID="{CAB3F01E-D3FE-4EAA-8A6F-423C6966FA01}"/>
+						<AuxBus Name="CaveEntrance" ID="{CAB3F01E-D3FE-4EAA-8A6F-423C6966FA01}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Church_Small_Wood" ID="{940CCB47-F031-4C6A-B0E6-726CAC418C02}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
 						<AuxBus Name="Dungeon_Core" ID="{963287B9-802A-43EF-A7FB-93E7D056D44D}"/>
 						<AuxBus Name="Dungeon_Entrance" ID="{D29F572F-4C18-43B9-84F6-8B5799890130}"/>
 						<AuxBus Name="Dungeon_Forge" ID="{11BCBE2A-9813-4E6A-AEF2-DD53F1FBD9AD}"/>

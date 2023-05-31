@@ -218,11 +218,7 @@
 				</Folder>
 				<Folder Name="Destruction" ID="{C25F7EBE-3172-4353-A9B7-D14B2ECBA0FE}" ShortID="134369106">
 					<ChildrenList>
-						<Event Name="Destruction_Container" ID="{6CC04A33-84A6-4E2A-994C-C6AAA6CED2B6}">
-							<ChildrenList>
-								<Action Name="" ID="{99107715-B9C2-495D-A554-8CDA35160909}" ShortID="64560271"/>
-							</ChildrenList>
-						</Event>
+						<Event Name="Destruction_Container" ID="{6CC04A33-84A6-4E2A-994C-C6AAA6CED2B6}"/>
 						<Event Name="Destruction_Crystal_Destroy" ID="{5BD02AFE-F362-4BCD-9126-7A0CE4004B4B}"/>
 						<Event Name="Destruction_Rock_Destroy" ID="{BA5CC407-F9A7-4354-8FBF-8D23000F85E7}"/>
 						<Event Name="Destruction_VolcanicBoulder_Impact" ID="{592674C2-65A8-4256-9BE3-98320CA76A16}"/>
