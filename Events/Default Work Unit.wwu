@@ -321,7 +321,24 @@
 				</Folder>
 				<Folder Name="Player" ID="{CBC1E676-A3D4-49C2-A0CD-EB87D3E99950}" ShortID="288689234">
 					<ChildrenList>
-						<Event Name="Player_Footstep" ID="{6EEE446B-391E-44B8-B66A-092C2C166CD7}"/>
+						<Event Name="Player_Footstep" ID="{6EEE446B-391E-44B8-B66A-092C2C166CD7}">
+							<ChildrenList>
+								<Action Name="" ID="{41C9E34E-A13D-4B1E-911B-44D0268A0468}" ShortID="220910440">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Run" ID="{0851B586-E8D2-438E-92B5-F9275CE2A71E}" WorkUnitID="{2BA6712C-AB6A-438F-92C8-E78810D3597A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6633D499-9A16-47D1-8EB3-030E5AF8208F}" ShortID="64529636">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Walk" ID="{DFE0B247-7171-4D66-947B-FD008B85970D}" WorkUnitID="{2BA6712C-AB6A-438F-92C8-E78810D3597A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Player_WeaponImpact" ID="{533248E0-3E0F-4CBF-99D3-BC153CB8B42E}"/>
 					</ChildrenList>
 				</Folder>

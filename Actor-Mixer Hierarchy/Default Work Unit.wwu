@@ -1166,11 +1166,33 @@
 				</Folder>
 				<Folder Name="Footsteps" ID="{E9693F4C-E75B-4616-A7FD-AB3AEFA56460}" ShortID="767190764">
 					<ChildrenList>
-						<Folder Name="Run" ID="{507E6A09-92DE-460D-8B10-D50EE81CDDB7}" ShortID="403673042">
+						<SwitchContainer Name="Run" ID="{0851B586-E8D2-438E-92B5-F9275CE2A71E}" ShortID="505706156">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Dirt" ID="{71532CF6-668B-4730-8B3E-BE28F88AB87D}" WorkUnitID="{DACDC791-5019-4232-A9A2-FB3DD68542BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Surface_Type" ID="{08C62BCA-03A4-4809-9AB4-758EDC205F63}" WorkUnitID="{DACDC791-5019-4232-A9A2-FB3DD68542BF}"/>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
-								<Folder Name="Dirt" ID="{E6F031A4-36BD-4C36-842B-CDCB114AE129}" ShortID="553628578">
+								<RandomSequenceContainer Name="Dirt" ID="{1B57F982-8BF8-4F56-BE59-AC1F36C6F0D1}" ShortID="1011496392">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Dirt" ID="{1B57F982-8BF8-4F56-BE59-AC1F36C6F0D1}" ShortID="1011496392">
+										<Sound Name="BAS_Player_Footstep_dirt_run_02" ID="{18E64272-CB44-4E82-AB3B-6458EA0AC786}" ShortID="98278665">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
@@ -1180,145 +1202,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="BAS_Player_Footstep_dirt_run_02" ID="{18E64272-CB44-4E82-AB3B-6458EA0AC786}" ShortID="98278665">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_dirt_run_02" ID="{6D6FE997-BDF6-497F-B815-1BFCF99A6574}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="160242761"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_dirt_run_02" ID="{6D6FE997-BDF6-497F-B815-1BFCF99A6574}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_dirt_run_04" ID="{D83ADC51-9871-4F03-B786-C7A52B495281}" ShortID="344812541">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_dirt_run_04" ID="{9F2F8EEF-46F0-4E3B-88EE-5059E5820C3A}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1063329383"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_dirt_run_04" ID="{9F2F8EEF-46F0-4E3B-88EE-5059E5820C3A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_dirt_run_05" ID="{9A5B3730-CEDA-497B-BA57-4A951152CFF5}" ShortID="195209314">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_dirt_run_05" ID="{ABBE3CE7-4C26-417F-9663-C0799457AD3B}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1013971532"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_dirt_run_05" ID="{ABBE3CE7-4C26-417F-9663-C0799457AD3B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_dirt_run_01" ID="{21640CE2-60AE-4F19-80B6-07431F89294A}" ShortID="320363584">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_dirt_run_01" ID="{A60F93E7-8176-4E67-9326-F131DBDDF779}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="352975741"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_dirt_run_01" ID="{A60F93E7-8176-4E67-9326-F131DBDDF779}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_dirt_run_06" ID="{69E26940-2D1E-490E-B4D4-E86ABDE7C3E9}" ShortID="7626181">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_dirt_run_06" ID="{E42CD416-B58E-4167-B616-E0C1674451D7}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="463384266"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_dirt_run_06" ID="{E42CD416-B58E-4167-B616-E0C1674451D7}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_dirt_run_03" ID="{B559B029-1482-4D71-9821-158389F068E5}" ShortID="137019688">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_dirt_run_03" ID="{6D31F987-A281-4ABA-A94C-6EFCBA1A752D}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="665087796"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_dirt_run_03" ID="{6D31F987-A281-4ABA-A94C-6EFCBA1A752D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="BAS_Player_Footstep_dirt_run_02" ID="{6D6FE997-BDF6-497F-B815-1BFCF99A6574}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="160242761"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-								</Folder>
-								<Folder Name="Grass" ID="{EE277110-828D-46D1-A82E-18467A82CFA9}" ShortID="984054913">
-									<ChildrenList>
-										<RandomSequenceContainer Name="Grass" ID="{95889741-FE6D-4DDD-8D9D-89474A659FBC}" ShortID="1909005">
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_dirt_run_02" ID="{6D6FE997-BDF6-497F-B815-1BFCF99A6574}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_dirt_run_04" ID="{D83ADC51-9871-4F03-B786-C7A52B495281}" ShortID="344812541">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
@@ -1328,145 +1224,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="BAS_Player_Footstep_grass_run_01" ID="{34621925-FF73-4939-9ACD-19AF0944A4C3}" ShortID="762109135">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_grass_run_01" ID="{57B39E5C-C23D-4E6E-B1C8-A233CA98AE94}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Grass\BAS_Player_Footstep_grass_run_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="859843864"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_grass_run_01" ID="{57B39E5C-C23D-4E6E-B1C8-A233CA98AE94}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_grass_run_03" ID="{FF36ACD6-4CAD-4BC1-8151-E844733969C0}" ShortID="688513257">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_grass_run_03" ID="{53C52BCE-0AFB-4EFC-A8B8-634C2D3AF6C8}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Grass\BAS_Player_Footstep_grass_run_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="133004450"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_grass_run_03" ID="{53C52BCE-0AFB-4EFC-A8B8-634C2D3AF6C8}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_grass_run_04" ID="{1347DAF1-469D-4405-A4C8-B8435ACB293E}" ShortID="505219103">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_grass_run_04" ID="{253A93C5-4E04-486C-A27F-D96EACCD386A}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Grass\BAS_Player_Footstep_grass_run_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="313016718"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_grass_run_04" ID="{253A93C5-4E04-486C-A27F-D96EACCD386A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_grass_run_05" ID="{0CDB795A-4463-4083-91CC-4DBA6A46B2A9}" ShortID="643490220">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_grass_run_05" ID="{E1AE5951-52E4-464E-8162-789E3E57674A}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Grass\BAS_Player_Footstep_grass_run_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1028027930"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_grass_run_05" ID="{E1AE5951-52E4-464E-8162-789E3E57674A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_grass_run_06" ID="{60E3115E-CE37-4940-B525-FA326C13E868}" ShortID="828014345">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_grass_run_06" ID="{831468A7-B0D5-4775-BDC4-14E37E913CD4}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Grass\BAS_Player_Footstep_grass_run_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="707500735"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_grass_run_06" ID="{831468A7-B0D5-4775-BDC4-14E37E913CD4}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_grass_run_02" ID="{7512797B-5BFC-40A1-B4A4-E4C26CF6C5CD}" ShortID="314827986">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_grass_run_02" ID="{12C1C68C-1C95-429A-A9FD-72134338B312}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Grass\BAS_Player_Footstep_grass_run_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="673871792"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_grass_run_02" ID="{12C1C68C-1C95-429A-A9FD-72134338B312}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="BAS_Player_Footstep_dirt_run_04" ID="{9F2F8EEF-46F0-4E3B-88EE-5059E5820C3A}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1063329383"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-								</Folder>
-								<Folder Name="Rubble" ID="{85F66A1F-CB36-4C49-9285-2B8BE608BA03}" ShortID="307836502">
-									<ChildrenList>
-										<RandomSequenceContainer Name="Rubble" ID="{5BA46B22-1AB7-4B97-BC3A-D369EBF06892}" ShortID="354888545">
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_dirt_run_04" ID="{9F2F8EEF-46F0-4E3B-88EE-5059E5820C3A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_dirt_run_05" ID="{9A5B3730-CEDA-497B-BA57-4A951152CFF5}" ShortID="195209314">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
@@ -1476,145 +1246,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="BAS_Player_Footstep_rubble_run_01" ID="{C5C2CCD0-026A-4009-B0BA-60FAE6BBDB0E}" ShortID="933789999">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_rubble_run_01" ID="{E87B025D-BAC7-44EE-8BD0-254E236CEFF7}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="773452199"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_rubble_run_01" ID="{E87B025D-BAC7-44EE-8BD0-254E236CEFF7}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_rubble_run_02" ID="{A07CF424-6273-4ECA-ADA9-F714DE95BF39}" ShortID="508391993">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_rubble_run_02" ID="{54F6B9E3-A71F-4D10-827B-F7C184E0F285}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="179569349"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_rubble_run_02" ID="{54F6B9E3-A71F-4D10-827B-F7C184E0F285}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_rubble_run_03" ID="{BF7DD695-B329-402A-8CC4-0FEC1FFEF482}" ShortID="79932883">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_rubble_run_03" ID="{CFDB18CC-C3D6-45AE-BEBB-51057A0D5BDE}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="861270075"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_rubble_run_03" ID="{CFDB18CC-C3D6-45AE-BEBB-51057A0D5BDE}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_rubble_run_04" ID="{8C104D46-A8CD-49CF-99C4-92CFBF207489}" ShortID="744415539">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_rubble_run_04" ID="{841A7748-A85B-4DE4-9870-DB2D65BA9092}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="587251449"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_rubble_run_04" ID="{841A7748-A85B-4DE4-9870-DB2D65BA9092}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_rubble_run_05" ID="{22471465-4258-452C-94CB-F496A0EAD6C6}" ShortID="269661095">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_rubble_run_05" ID="{9B4D29E0-7F2D-4997-BA40-BF593AEE2307}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="160074859"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_rubble_run_05" ID="{9B4D29E0-7F2D-4997-BA40-BF593AEE2307}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_rubble_run_06" ID="{F2226922-A3D1-475D-8173-7A00E47AA9DF}" ShortID="983450502">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_rubble_run_06" ID="{93D23E34-D25C-40F0-A0CD-4FEF8BAEC164}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="570080049"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_rubble_run_06" ID="{93D23E34-D25C-40F0-A0CD-4FEF8BAEC164}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="BAS_Player_Footstep_dirt_run_05" ID="{ABBE3CE7-4C26-417F-9663-C0799457AD3B}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1013971532"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-								</Folder>
-								<Folder Name="Sand" ID="{19ACE93C-C92B-432E-AAEF-3940A3A19CC1}" ShortID="631058541">
-									<ChildrenList>
-										<RandomSequenceContainer Name="Sand" ID="{1D6E5657-463D-4583-ABC8-338989F2E4D6}" ShortID="989550983">
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_dirt_run_05" ID="{ABBE3CE7-4C26-417F-9663-C0799457AD3B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_dirt_run_01" ID="{21640CE2-60AE-4F19-80B6-07431F89294A}" ShortID="320363584">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
@@ -1624,145 +1268,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="BAS_Player_Footstep_sand_run_05" ID="{D22E30D7-2561-4008-8382-3EFD750B749E}" ShortID="910451162">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_sand_run_05" ID="{EF9B6614-14FD-4BE5-BED5-062CC7D4E070}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Sand\BAS_Player_Footstep_sand_run_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="163699464"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_sand_run_05" ID="{EF9B6614-14FD-4BE5-BED5-062CC7D4E070}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_sand_run_06" ID="{B4E658F8-45FF-4BB3-A61C-3919D44FEC0D}" ShortID="245856492">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_sand_run_06" ID="{5C63FBFD-94B1-4137-877E-B87E34CCD557}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Sand\BAS_Player_Footstep_sand_run_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="559955634"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_sand_run_06" ID="{5C63FBFD-94B1-4137-877E-B87E34CCD557}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_sand_run_01" ID="{0FFDD29F-DAFD-48C8-B11A-8AF2719D807E}" ShortID="363722910">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_sand_run_01" ID="{3C040CC0-F8CB-4B30-8887-F3D3B021585E}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Sand\BAS_Player_Footstep_sand_run_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="569681843"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_sand_run_01" ID="{3C040CC0-F8CB-4B30-8887-F3D3B021585E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_sand_run_04" ID="{0C8D5119-1C0C-4C8A-B8CE-5C8FFA14C6E9}" ShortID="760172015">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_sand_run_04" ID="{FE3F84F4-F7AE-4C56-8F37-873D3B02B3AF}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Sand\BAS_Player_Footstep_sand_run_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="530340294"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_sand_run_04" ID="{FE3F84F4-F7AE-4C56-8F37-873D3B02B3AF}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_sand_run_03" ID="{F126F413-038D-46D6-B2B4-3FD8FBD0F363}" ShortID="786714877">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_sand_run_03" ID="{7247258C-818C-48CD-8E1D-1273058FB928}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Sand\BAS_Player_Footstep_sand_run_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="193336090"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_sand_run_03" ID="{7247258C-818C-48CD-8E1D-1273058FB928}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_sand_run_02" ID="{C5FE52E9-59A6-4458-9DCE-3A3457619397}" ShortID="446386370">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_sand_run_02" ID="{B8A11455-72C9-4C0D-8584-CE15A71A6660}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Sand\BAS_Player_Footstep_sand_run_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="100724420"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_sand_run_02" ID="{B8A11455-72C9-4C0D-8584-CE15A71A6660}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="BAS_Player_Footstep_dirt_run_01" ID="{A60F93E7-8176-4E67-9326-F131DBDDF779}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="352975741"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-								</Folder>
-								<Folder Name="Stone" ID="{DA12284E-6FD7-4ED3-B030-79732F433669}" ShortID="548270596">
-									<ChildrenList>
-										<RandomSequenceContainer Name="Stone" ID="{F06F28DB-19D7-419F-960E-D5AD7F523D56}" ShortID="620790430">
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_dirt_run_01" ID="{A60F93E7-8176-4E67-9326-F131DBDDF779}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_dirt_run_06" ID="{69E26940-2D1E-490E-B4D4-E86ABDE7C3E9}" ShortID="7626181">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
@@ -1772,145 +1290,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="BAS_Player_Footstep_stone_run_01" ID="{1458DB9C-7C78-4DDC-8078-83A6B7FA7E6C}" ShortID="608943830">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_stone_run_01" ID="{D7DF72B5-6DCA-4744-9FE7-4B6060AB7364}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="785882235"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_stone_run_01" ID="{D7DF72B5-6DCA-4744-9FE7-4B6060AB7364}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_stone_run_02" ID="{40F2D28F-CC81-4D73-BF79-B861E00250A9}" ShortID="1069104915">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_stone_run_02" ID="{E99A7E25-0838-459F-834A-F74B8765E93A}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1053501155"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_stone_run_02" ID="{E99A7E25-0838-459F-834A-F74B8765E93A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_stone_run_03" ID="{ECF44DC7-0DA4-45C1-9E9D-6B341A25C4C4}" ShortID="1066673136">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_stone_run_03" ID="{29520D2F-80E8-4152-8F2D-E61EC4963ADD}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="942531639"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_stone_run_03" ID="{29520D2F-80E8-4152-8F2D-E61EC4963ADD}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_stone_run_04" ID="{CAD5B468-FCFA-428D-90B4-8BBF3D27D963}" ShortID="169411918">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_stone_run_04" ID="{3EB342FE-8E25-4DB9-95C2-3E430BEF0B98}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1034692318"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_stone_run_04" ID="{3EB342FE-8E25-4DB9-95C2-3E430BEF0B98}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_stone_run_05" ID="{C5C4EE8E-78AF-48ED-99D8-2C721FA25F00}" ShortID="829356527">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_stone_run_05" ID="{A7EDBF49-C9C4-42B2-9822-5FFB3ED2A5F7}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="548392736"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_stone_run_05" ID="{A7EDBF49-C9C4-42B2-9822-5FFB3ED2A5F7}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_stone_run_06" ID="{EC1B7455-155F-4808-9C77-214EAEF56D95}" ShortID="14976652">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_stone_run_06" ID="{35BDE18E-F7BD-4582-B03C-64FFBDE24882}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="807902726"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_stone_run_06" ID="{35BDE18E-F7BD-4582-B03C-64FFBDE24882}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="BAS_Player_Footstep_dirt_run_06" ID="{E42CD416-B58E-4167-B616-E0C1674451D7}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="463384266"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-								</Folder>
-								<Folder Name="Water" ID="{AAC94888-4915-4D8F-A7CA-EC6FDAAFC24D}" ShortID="368284742">
-									<ChildrenList>
-										<RandomSequenceContainer Name="Water" ID="{057320E9-03A5-4EF3-B071-CCFBCB42F55C}" ShortID="30162888">
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_dirt_run_06" ID="{E42CD416-B58E-4167-B616-E0C1674451D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_dirt_run_03" ID="{B559B029-1482-4D71-9821-158389F068E5}" ShortID="137019688">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
@@ -1920,145 +1312,31 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="BAS_Player_Footstep_water_run_01" ID="{35035E25-04EF-4F85-82BA-1A20A498629C}" ShortID="102471153">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_water_run_01" ID="{30CD578A-5B90-424F-84D0-972A28DE2016}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Water\BAS_Player_Footstep_water_run_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1061349903"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_water_run_01" ID="{30CD578A-5B90-424F-84D0-972A28DE2016}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_water_run_02" ID="{E9D884CF-9158-436D-801D-4EC214B37660}" ShortID="840892711">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_water_run_02" ID="{9930A9E6-5187-48D8-A8BE-4DCF847DCCC9}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Water\BAS_Player_Footstep_water_run_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="364602078"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_water_run_02" ID="{9930A9E6-5187-48D8-A8BE-4DCF847DCCC9}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_water_run_03" ID="{CF0CCD1C-9039-4265-BE7B-E8841805638F}" ShortID="749800643">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_water_run_03" ID="{DB8FA783-57EF-4670-B91E-94AED47532A6}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Water\BAS_Player_Footstep_water_run_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="501419369"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_water_run_03" ID="{DB8FA783-57EF-4670-B91E-94AED47532A6}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_water_run_04" ID="{B9E4E34E-45E3-40E4-B7D2-D22640041916}" ShortID="192905798">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_water_run_04" ID="{88D9DB11-D0BC-4D72-B383-140AEDBA49A7}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Water\BAS_Player_Footstep_water_run_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="406365616"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_water_run_04" ID="{88D9DB11-D0BC-4D72-B383-140AEDBA49A7}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_water_run_05" ID="{EF212FA6-4324-4557-97EC-AB7F54C340D4}" ShortID="914530262">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_water_run_05" ID="{C2858286-37AC-4AFA-BF3C-9FC73DDEB952}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Water\BAS_Player_Footstep_water_run_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1064163157"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_water_run_05" ID="{C2858286-37AC-4AFA-BF3C-9FC73DDEB952}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_water_run_06" ID="{819DCCC9-5A80-4461-8344-A0461AEE759C}" ShortID="438902826">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_water_run_06" ID="{3CA163D8-2E70-465B-89E9-BC08D0F033BD}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Water\BAS_Player_Footstep_water_run_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="573295967"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_water_run_06" ID="{3CA163D8-2E70-465B-89E9-BC08D0F033BD}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="BAS_Player_Footstep_dirt_run_03" ID="{6D31F987-A281-4ABA-A94C-6EFCBA1A752D}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Dirt\BAS_Player_Footstep_dirt_run_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="665087796"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_dirt_run_03" ID="{6D31F987-A281-4ABA-A94C-6EFCBA1A752D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-								</Folder>
-								<Folder Name="Wood" ID="{33C2855B-CE3C-41D2-BB26-F9465EC911D0}" ShortID="348803301">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Grass" ID="{95889741-FE6D-4DDD-8D9D-89474A659FBC}" ShortID="1909005">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Wood" ID="{24C27455-C221-4296-87A8-043692AF40BE}" ShortID="757544758">
+										<Sound Name="BAS_Player_Footstep_grass_run_01" ID="{34621925-FF73-4939-9ACD-19AF0944A4C3}" ShortID="762109135">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
@@ -2068,147 +1346,995 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="BAS_Player_Footstep_wood_run_01" ID="{BABB6C77-53F0-43C7-BCF2-01DCB7E34395}" ShortID="1000984671">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_wood_run_01" ID="{40B5659D-6C75-4CCF-8C95-0DE7CEA069A3}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="498682147"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_wood_run_01" ID="{40B5659D-6C75-4CCF-8C95-0DE7CEA069A3}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_wood_run_02" ID="{0C1510BA-2129-4531-80BA-10226C29EA02}" ShortID="927879418">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_wood_run_02" ID="{F95361EA-03D1-4BBA-8BF4-E9D476D9D284}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="803904636"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_wood_run_02" ID="{F95361EA-03D1-4BBA-8BF4-E9D476D9D284}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_wood_run_03" ID="{71FE3BBD-476F-4846-B1B9-C8753825E51F}" ShortID="933652824">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_wood_run_03" ID="{51E67D34-ECD4-4413-A1AA-E712CD5C30D0}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="662474064"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_wood_run_03" ID="{51E67D34-ECD4-4413-A1AA-E712CD5C30D0}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_wood_run_04" ID="{59801C1C-9692-44F9-AF78-AA9BC2F739BF}" ShortID="74051392">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_wood_run_04" ID="{C1D9C85E-0271-4B9A-8A53-92422B133484}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="191872957"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_wood_run_04" ID="{C1D9C85E-0271-4B9A-8A53-92422B133484}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_wood_run_05" ID="{1601B4B1-8E01-4300-AF69-D278FE259DE7}" ShortID="662319604">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_wood_run_05" ID="{667EDDD6-D496-4F30-9EF3-F68A56C5EE40}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="793061287"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_wood_run_05" ID="{667EDDD6-D496-4F30-9EF3-F68A56C5EE40}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="BAS_Player_Footstep_wood_run_06" ID="{D2CF3EE0-9377-44C3-91E3-6404FDBB3991}" ShortID="85862107">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_Player_Footstep_wood_run_06" ID="{BE43C63F-C8A9-434C-84B6-E92A49DE090D}">
-															<Language>SFX</Language>
-															<AudioFile>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="668726897"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_Player_Footstep_wood_run_06" ID="{BE43C63F-C8A9-434C-84B6-E92A49DE090D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="BAS_Player_Footstep_grass_run_01" ID="{57B39E5C-C23D-4E6E-B1C8-A233CA98AE94}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Grass\BAS_Player_Footstep_grass_run_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="859843864"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_grass_run_01" ID="{57B39E5C-C23D-4E6E-B1C8-A233CA98AE94}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_grass_run_03" ID="{FF36ACD6-4CAD-4BC1-8151-E844733969C0}" ShortID="688513257">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_grass_run_03" ID="{53C52BCE-0AFB-4EFC-A8B8-634C2D3AF6C8}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Grass\BAS_Player_Footstep_grass_run_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="133004450"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_grass_run_03" ID="{53C52BCE-0AFB-4EFC-A8B8-634C2D3AF6C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_grass_run_04" ID="{1347DAF1-469D-4405-A4C8-B8435ACB293E}" ShortID="505219103">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_grass_run_04" ID="{253A93C5-4E04-486C-A27F-D96EACCD386A}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Grass\BAS_Player_Footstep_grass_run_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="313016718"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_grass_run_04" ID="{253A93C5-4E04-486C-A27F-D96EACCD386A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_grass_run_05" ID="{0CDB795A-4463-4083-91CC-4DBA6A46B2A9}" ShortID="643490220">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_grass_run_05" ID="{E1AE5951-52E4-464E-8162-789E3E57674A}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Grass\BAS_Player_Footstep_grass_run_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1028027930"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_grass_run_05" ID="{E1AE5951-52E4-464E-8162-789E3E57674A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_grass_run_06" ID="{60E3115E-CE37-4940-B525-FA326C13E868}" ShortID="828014345">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_grass_run_06" ID="{831468A7-B0D5-4775-BDC4-14E37E913CD4}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Grass\BAS_Player_Footstep_grass_run_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="707500735"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_grass_run_06" ID="{831468A7-B0D5-4775-BDC4-14E37E913CD4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_grass_run_02" ID="{7512797B-5BFC-40A1-B4A4-E4C26CF6C5CD}" ShortID="314827986">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_grass_run_02" ID="{12C1C68C-1C95-429A-A9FD-72134338B312}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Grass\BAS_Player_Footstep_grass_run_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="673871792"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_grass_run_02" ID="{12C1C68C-1C95-429A-A9FD-72134338B312}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-								</Folder>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Rubble" ID="{5BA46B22-1AB7-4B97-BC3A-D369EBF06892}" ShortID="354888545">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BAS_Player_Footstep_rubble_run_01" ID="{C5C2CCD0-026A-4009-B0BA-60FAE6BBDB0E}" ShortID="933789999">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_rubble_run_01" ID="{E87B025D-BAC7-44EE-8BD0-254E236CEFF7}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="773452199"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_rubble_run_01" ID="{E87B025D-BAC7-44EE-8BD0-254E236CEFF7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_rubble_run_02" ID="{A07CF424-6273-4ECA-ADA9-F714DE95BF39}" ShortID="508391993">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_rubble_run_02" ID="{54F6B9E3-A71F-4D10-827B-F7C184E0F285}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="179569349"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_rubble_run_02" ID="{54F6B9E3-A71F-4D10-827B-F7C184E0F285}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_rubble_run_03" ID="{BF7DD695-B329-402A-8CC4-0FEC1FFEF482}" ShortID="79932883">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_rubble_run_03" ID="{CFDB18CC-C3D6-45AE-BEBB-51057A0D5BDE}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="861270075"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_rubble_run_03" ID="{CFDB18CC-C3D6-45AE-BEBB-51057A0D5BDE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_rubble_run_04" ID="{8C104D46-A8CD-49CF-99C4-92CFBF207489}" ShortID="744415539">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_rubble_run_04" ID="{841A7748-A85B-4DE4-9870-DB2D65BA9092}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="587251449"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_rubble_run_04" ID="{841A7748-A85B-4DE4-9870-DB2D65BA9092}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_rubble_run_05" ID="{22471465-4258-452C-94CB-F496A0EAD6C6}" ShortID="269661095">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_rubble_run_05" ID="{9B4D29E0-7F2D-4997-BA40-BF593AEE2307}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="160074859"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_rubble_run_05" ID="{9B4D29E0-7F2D-4997-BA40-BF593AEE2307}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_rubble_run_06" ID="{F2226922-A3D1-475D-8173-7A00E47AA9DF}" ShortID="983450502">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_rubble_run_06" ID="{93D23E34-D25C-40F0-A0CD-4FEF8BAEC164}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Rubble\BAS_Player_Footstep_rubble_run_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="570080049"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_rubble_run_06" ID="{93D23E34-D25C-40F0-A0CD-4FEF8BAEC164}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Sand" ID="{1D6E5657-463D-4583-ABC8-338989F2E4D6}" ShortID="989550983">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BAS_Player_Footstep_sand_run_05" ID="{D22E30D7-2561-4008-8382-3EFD750B749E}" ShortID="910451162">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_sand_run_05" ID="{EF9B6614-14FD-4BE5-BED5-062CC7D4E070}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Sand\BAS_Player_Footstep_sand_run_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="163699464"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_sand_run_05" ID="{EF9B6614-14FD-4BE5-BED5-062CC7D4E070}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_sand_run_06" ID="{B4E658F8-45FF-4BB3-A61C-3919D44FEC0D}" ShortID="245856492">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_sand_run_06" ID="{5C63FBFD-94B1-4137-877E-B87E34CCD557}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Sand\BAS_Player_Footstep_sand_run_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="559955634"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_sand_run_06" ID="{5C63FBFD-94B1-4137-877E-B87E34CCD557}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_sand_run_01" ID="{0FFDD29F-DAFD-48C8-B11A-8AF2719D807E}" ShortID="363722910">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_sand_run_01" ID="{3C040CC0-F8CB-4B30-8887-F3D3B021585E}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Sand\BAS_Player_Footstep_sand_run_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="569681843"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_sand_run_01" ID="{3C040CC0-F8CB-4B30-8887-F3D3B021585E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_sand_run_04" ID="{0C8D5119-1C0C-4C8A-B8CE-5C8FFA14C6E9}" ShortID="760172015">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_sand_run_04" ID="{FE3F84F4-F7AE-4C56-8F37-873D3B02B3AF}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Sand\BAS_Player_Footstep_sand_run_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="530340294"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_sand_run_04" ID="{FE3F84F4-F7AE-4C56-8F37-873D3B02B3AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_sand_run_03" ID="{F126F413-038D-46D6-B2B4-3FD8FBD0F363}" ShortID="786714877">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_sand_run_03" ID="{7247258C-818C-48CD-8E1D-1273058FB928}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Sand\BAS_Player_Footstep_sand_run_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="193336090"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_sand_run_03" ID="{7247258C-818C-48CD-8E1D-1273058FB928}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_sand_run_02" ID="{C5FE52E9-59A6-4458-9DCE-3A3457619397}" ShortID="446386370">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_sand_run_02" ID="{B8A11455-72C9-4C0D-8584-CE15A71A6660}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Sand\BAS_Player_Footstep_sand_run_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="100724420"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_sand_run_02" ID="{B8A11455-72C9-4C0D-8584-CE15A71A6660}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Stone" ID="{F06F28DB-19D7-419F-960E-D5AD7F523D56}" ShortID="620790430">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BAS_Player_Footstep_stone_run_01" ID="{1458DB9C-7C78-4DDC-8078-83A6B7FA7E6C}" ShortID="608943830">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_stone_run_01" ID="{D7DF72B5-6DCA-4744-9FE7-4B6060AB7364}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="785882235"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_stone_run_01" ID="{D7DF72B5-6DCA-4744-9FE7-4B6060AB7364}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_stone_run_02" ID="{40F2D28F-CC81-4D73-BF79-B861E00250A9}" ShortID="1069104915">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_stone_run_02" ID="{E99A7E25-0838-459F-834A-F74B8765E93A}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1053501155"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_stone_run_02" ID="{E99A7E25-0838-459F-834A-F74B8765E93A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_stone_run_03" ID="{ECF44DC7-0DA4-45C1-9E9D-6B341A25C4C4}" ShortID="1066673136">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_stone_run_03" ID="{29520D2F-80E8-4152-8F2D-E61EC4963ADD}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="942531639"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_stone_run_03" ID="{29520D2F-80E8-4152-8F2D-E61EC4963ADD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_stone_run_04" ID="{CAD5B468-FCFA-428D-90B4-8BBF3D27D963}" ShortID="169411918">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_stone_run_04" ID="{3EB342FE-8E25-4DB9-95C2-3E430BEF0B98}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1034692318"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_stone_run_04" ID="{3EB342FE-8E25-4DB9-95C2-3E430BEF0B98}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_stone_run_05" ID="{C5C4EE8E-78AF-48ED-99D8-2C721FA25F00}" ShortID="829356527">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_stone_run_05" ID="{A7EDBF49-C9C4-42B2-9822-5FFB3ED2A5F7}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="548392736"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_stone_run_05" ID="{A7EDBF49-C9C4-42B2-9822-5FFB3ED2A5F7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_stone_run_06" ID="{EC1B7455-155F-4808-9C77-214EAEF56D95}" ShortID="14976652">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_stone_run_06" ID="{35BDE18E-F7BD-4582-B03C-64FFBDE24882}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Stone\BAS_Player_Footstep_stone_run_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="807902726"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_stone_run_06" ID="{35BDE18E-F7BD-4582-B03C-64FFBDE24882}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Water" ID="{057320E9-03A5-4EF3-B071-CCFBCB42F55C}" ShortID="30162888">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BAS_Player_Footstep_water_run_01" ID="{35035E25-04EF-4F85-82BA-1A20A498629C}" ShortID="102471153">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_water_run_01" ID="{30CD578A-5B90-424F-84D0-972A28DE2016}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Water\BAS_Player_Footstep_water_run_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1061349903"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_water_run_01" ID="{30CD578A-5B90-424F-84D0-972A28DE2016}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_water_run_02" ID="{E9D884CF-9158-436D-801D-4EC214B37660}" ShortID="840892711">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_water_run_02" ID="{9930A9E6-5187-48D8-A8BE-4DCF847DCCC9}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Water\BAS_Player_Footstep_water_run_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="364602078"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_water_run_02" ID="{9930A9E6-5187-48D8-A8BE-4DCF847DCCC9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_water_run_03" ID="{CF0CCD1C-9039-4265-BE7B-E8841805638F}" ShortID="749800643">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_water_run_03" ID="{DB8FA783-57EF-4670-B91E-94AED47532A6}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Water\BAS_Player_Footstep_water_run_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="501419369"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_water_run_03" ID="{DB8FA783-57EF-4670-B91E-94AED47532A6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_water_run_04" ID="{B9E4E34E-45E3-40E4-B7D2-D22640041916}" ShortID="192905798">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_water_run_04" ID="{88D9DB11-D0BC-4D72-B383-140AEDBA49A7}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Water\BAS_Player_Footstep_water_run_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="406365616"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_water_run_04" ID="{88D9DB11-D0BC-4D72-B383-140AEDBA49A7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_water_run_05" ID="{EF212FA6-4324-4557-97EC-AB7F54C340D4}" ShortID="914530262">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_water_run_05" ID="{C2858286-37AC-4AFA-BF3C-9FC73DDEB952}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Water\BAS_Player_Footstep_water_run_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1064163157"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_water_run_05" ID="{C2858286-37AC-4AFA-BF3C-9FC73DDEB952}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_water_run_06" ID="{819DCCC9-5A80-4461-8344-A0461AEE759C}" ShortID="438902826">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_water_run_06" ID="{3CA163D8-2E70-465B-89E9-BC08D0F033BD}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Water\BAS_Player_Footstep_water_run_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="573295967"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_water_run_06" ID="{3CA163D8-2E70-465B-89E9-BC08D0F033BD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wood" ID="{24C27455-C221-4296-87A8-043692AF40BE}" ShortID="757544758">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BAS_Player_Footstep_wood_run_01" ID="{BABB6C77-53F0-43C7-BCF2-01DCB7E34395}" ShortID="1000984671">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_wood_run_01" ID="{40B5659D-6C75-4CCF-8C95-0DE7CEA069A3}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="498682147"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_wood_run_01" ID="{40B5659D-6C75-4CCF-8C95-0DE7CEA069A3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_wood_run_02" ID="{0C1510BA-2129-4531-80BA-10226C29EA02}" ShortID="927879418">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_wood_run_02" ID="{F95361EA-03D1-4BBA-8BF4-E9D476D9D284}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="803904636"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_wood_run_02" ID="{F95361EA-03D1-4BBA-8BF4-E9D476D9D284}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_wood_run_03" ID="{71FE3BBD-476F-4846-B1B9-C8753825E51F}" ShortID="933652824">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_wood_run_03" ID="{51E67D34-ECD4-4413-A1AA-E712CD5C30D0}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="662474064"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_wood_run_03" ID="{51E67D34-ECD4-4413-A1AA-E712CD5C30D0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_wood_run_04" ID="{59801C1C-9692-44F9-AF78-AA9BC2F739BF}" ShortID="74051392">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_wood_run_04" ID="{C1D9C85E-0271-4B9A-8A53-92422B133484}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="191872957"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_wood_run_04" ID="{C1D9C85E-0271-4B9A-8A53-92422B133484}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_wood_run_05" ID="{1601B4B1-8E01-4300-AF69-D278FE259DE7}" ShortID="662319604">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_wood_run_05" ID="{667EDDD6-D496-4F30-9EF3-F68A56C5EE40}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="793061287"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_wood_run_05" ID="{667EDDD6-D496-4F30-9EF3-F68A56C5EE40}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BAS_Player_Footstep_wood_run_06" ID="{D2CF3EE0-9377-44C3-91E3-6404FDBB3991}" ShortID="85862107">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_Player_Footstep_wood_run_06" ID="{BE43C63F-C8A9-434C-84B6-E92A49DE090D}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Run\Wood\BAS_Player_Footstep_wood_run_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="668726897"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_Player_Footstep_wood_run_06" ID="{BE43C63F-C8A9-434C-84B6-E92A49DE090D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
-						</Folder>
-						<Folder Name="Walk" ID="{9095DCFC-D1B8-41ED-959E-DEA5EFA98254}" ShortID="568561469">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{CF874FD4-582F-4378-8F6C-EC5F26967C29}" ShortID="570431305">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Player_MovementSpeed" ID="{2C554B59-0432-4E28-B6A1-C53D6C84999F}" WorkUnitID="{B87865CF-7B6F-4FCD-AE25-1CF012650DA9}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{2996BF6B-8559-4D48-9318-06D4D0CCA5D3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>49.999</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>50</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Rubble" ID="{5BA46B22-1AB7-4B97-BC3A-D369EBF06892}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Grass" ID="{95889741-FE6D-4DDD-8D9D-89474A659FBC}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wood" ID="{24C27455-C221-4296-87A8-043692AF40BE}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sand" ID="{1D6E5657-463D-4583-ABC8-338989F2E4D6}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Dirt" ID="{1B57F982-8BF8-4F56-BE59-AC1F36C6F0D1}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Stone" ID="{F06F28DB-19D7-419F-960E-D5AD7F523D56}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Water" ID="{057320E9-03A5-4EF3-B071-CCFBCB42F55C}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Wood" ID="{750C521A-97A4-4605-AE75-06676F0570E0}"/>
+										<ItemList>
+											<ItemRef Name="Wood" ID="{24C27455-C221-4296-87A8-043692AF40BE}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Rubble" ID="{B83CE623-2808-4BFD-B3A1-D41A9F5DA1A5}"/>
+										<ItemList>
+											<ItemRef Name="Rubble" ID="{5BA46B22-1AB7-4B97-BC3A-D369EBF06892}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Stone" ID="{E4693E57-0B58-44E0-83C1-89D4C01D1100}"/>
+										<ItemList>
+											<ItemRef Name="Stone" ID="{F06F28DB-19D7-419F-960E-D5AD7F523D56}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grass" ID="{CD3F0373-D50C-4323-BE7D-DFBE5018FAFB}"/>
+										<ItemList>
+											<ItemRef Name="Grass" ID="{95889741-FE6D-4DDD-8D9D-89474A659FBC}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Water" ID="{B2F20597-1106-44DD-837C-14F5953B347B}"/>
+										<ItemList>
+											<ItemRef Name="Water" ID="{057320E9-03A5-4EF3-B071-CCFBCB42F55C}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Sand" ID="{801541F0-7914-4CCA-BA0D-FEEFB881B02C}"/>
+										<ItemList>
+											<ItemRef Name="Sand" ID="{1D6E5657-463D-4583-ABC8-338989F2E4D6}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Dirt" ID="{71532CF6-668B-4730-8B3E-BE28F88AB87D}"/>
+										<ItemList>
+											<ItemRef Name="Dirt" ID="{1B57F982-8BF8-4F56-BE59-AC1F36C6F0D1}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Walk" ID="{DFE0B247-7171-4D66-947B-FD008B85970D}" ShortID="618164158">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Dirt" ID="{71532CF6-668B-4730-8B3E-BE28F88AB87D}" WorkUnitID="{DACDC791-5019-4232-A9A2-FB3DD68542BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Surface_Type" ID="{08C62BCA-03A4-4809-9AB4-758EDC205F63}" WorkUnitID="{DACDC791-5019-4232-A9A2-FB3DD68542BF}"/>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
-								<Folder Name="Dirt" ID="{ABF1C40E-A894-425F-9FBA-A8406A37C3AE}" ShortID="809333587">
+								<RandomSequenceContainer Name="Dirt" ID="{0883D4BF-C7E4-44F8-AB75-DA499A366D83}" ShortID="338565712">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="BAS_Player_Footstep_dirt_walk_01" ID="{9948C135-3FD1-4BFB-AFC6-D6C5D9E94411}" ShortID="885827061">
 											<ReferenceList>
@@ -2343,8 +2469,16 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</Folder>
-								<Folder Name="Grass" ID="{4C75F0F9-C3F9-4C04-9E5F-FE9E781AD247}" ShortID="520322230">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Grass" ID="{CD83050D-0FF5-446E-95D8-351824F9D286}" ShortID="900546052">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="BAS_Player_Footstep_grass_walk_01" ID="{C6F2369A-2017-43AF-848E-264528146EDD}" ShortID="559861382">
 											<ReferenceList>
@@ -2479,8 +2613,16 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</Folder>
-								<Folder Name="Rubble" ID="{81287C57-8A72-4ACC-B43E-8DEABE700F33}" ShortID="1022616569">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Rubble" ID="{5A6D7267-AF6A-4B0A-9156-3BE708C23237}" ShortID="329741118">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="BAS_Player_Footstep_rubble_walk_02" ID="{60B344F4-E417-408A-93ED-A8F7135D1478}" ShortID="787631827">
 											<ReferenceList>
@@ -2593,8 +2735,16 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</Folder>
-								<Folder Name="Sand" ID="{6AD1FB57-721B-4848-B9D0-D558F702CB3E}" ShortID="337078708">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Sand" ID="{8DCD2F59-45F1-4F21-B7C3-9C7568DA89C5}" ShortID="781098519">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="BAS_Player_Footstep_sand_walk_01" ID="{FB3AB934-E038-4E4E-A652-8F7FB04525D7}" ShortID="368258858">
 											<ReferenceList>
@@ -2729,8 +2879,16 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</Folder>
-								<Folder Name="Stone" ID="{2B77AA97-FFF8-4C07-8E74-05E8DC219325}" ShortID="87702134">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Stone" ID="{584B2234-2844-4599-BF69-7FE327FB23F3}" ShortID="238175298">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="BAS_Player_Footstep_stone_walk_01" ID="{68985896-3C27-4B90-B14E-1C2F09E0A23E}" ShortID="776402366">
 											<ReferenceList>
@@ -2865,8 +3023,16 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</Folder>
-								<Folder Name="Water" ID="{65DD33E2-315D-40B1-92AD-22C4202DAAB1}" ShortID="1031590582">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Water" ID="{64EF527C-947F-430D-948D-6D72EC3A0D15}" ShortID="273425215">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="BAS_Player_Footstep_water_walk_01" ID="{2E5A158D-9601-43C9-BF5C-4D0CEF2B937A}" ShortID="416409970">
 											<ReferenceList>
@@ -3001,8 +3167,16 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</Folder>
-								<Folder Name="Wood" ID="{B7C54409-8115-4571-AA41-8BB37550D411}" ShortID="233725570">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wood" ID="{C1D019AB-7BEE-4D0A-8035-AD6399FAFF98}" ShortID="657912033">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B7D769-D8BD-422E-A209-0796CB522E0A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{59965A9C-8AC1-4A91-992A-D833D23B753F}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="BAS_Player_Footstep_wood_walk_01" ID="{9E5ABF44-BF29-42CB-BE3C-7C85BA6D0412}" ShortID="283137511">
 											<ReferenceList>
@@ -3137,9 +3311,127 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</Folder>
+								</RandomSequenceContainer>
 							</ChildrenList>
-						</Folder>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{E37A44FB-8968-47FD-93EE-1164F4653F5A}" ShortID="104008274">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Player_MovementSpeed" ID="{2C554B59-0432-4E28-B6A1-C53D6C84999F}" WorkUnitID="{B87865CF-7B6F-4FCD-AE25-1CF012650DA9}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{B7806508-D03C-4F17-B793-BC9FBA158BE6}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>49.999</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>50</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Grass" ID="{CD83050D-0FF5-446E-95D8-351824F9D286}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Stone" ID="{584B2234-2844-4599-BF69-7FE327FB23F3}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sand" ID="{8DCD2F59-45F1-4F21-B7C3-9C7568DA89C5}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Rubble" ID="{5A6D7267-AF6A-4B0A-9156-3BE708C23237}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Water" ID="{64EF527C-947F-430D-948D-6D72EC3A0D15}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wood" ID="{C1D019AB-7BEE-4D0A-8035-AD6399FAFF98}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Dirt" ID="{0883D4BF-C7E4-44F8-AB75-DA499A366D83}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Wood" ID="{750C521A-97A4-4605-AE75-06676F0570E0}"/>
+										<ItemList>
+											<ItemRef Name="Wood" ID="{C1D019AB-7BEE-4D0A-8035-AD6399FAFF98}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Rubble" ID="{B83CE623-2808-4BFD-B3A1-D41A9F5DA1A5}"/>
+										<ItemList>
+											<ItemRef Name="Rubble" ID="{5A6D7267-AF6A-4B0A-9156-3BE708C23237}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Stone" ID="{E4693E57-0B58-44E0-83C1-89D4C01D1100}"/>
+										<ItemList>
+											<ItemRef Name="Stone" ID="{584B2234-2844-4599-BF69-7FE327FB23F3}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grass" ID="{CD3F0373-D50C-4323-BE7D-DFBE5018FAFB}"/>
+										<ItemList>
+											<ItemRef Name="Grass" ID="{CD83050D-0FF5-446E-95D8-351824F9D286}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Water" ID="{B2F20597-1106-44DD-837C-14F5953B347B}"/>
+										<ItemList>
+											<ItemRef Name="Water" ID="{64EF527C-947F-430D-948D-6D72EC3A0D15}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Sand" ID="{801541F0-7914-4CCA-BA0D-FEEFB881B02C}"/>
+										<ItemList>
+											<ItemRef Name="Sand" ID="{8DCD2F59-45F1-4F21-B7C3-9C7568DA89C5}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Dirt" ID="{71532CF6-668B-4730-8B3E-BE28F88AB87D}"/>
+										<ItemList>
+											<ItemRef Name="Dirt" ID="{0883D4BF-C7E4-44F8-AB75-DA499A366D83}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Heartbeat" ID="{202B74EE-E652-45A9-B02D-A92C8B83F91D}" ShortID="116261895">
