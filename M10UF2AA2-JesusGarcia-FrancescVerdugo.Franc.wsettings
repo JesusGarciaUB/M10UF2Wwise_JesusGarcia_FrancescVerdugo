@@ -32,7 +32,7 @@
 				<Property Name="MeterView\MeterMode1Viewpoint3" Type="int32" Value="0"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
-				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAAABAAAAAAAAAJAUa9RmAgAAAgAAAAAAAACoh5PqZgIAACwDisNmAgAAbwAAAAAAAACAGWvUZgIAADCugOpmAgAAAgAAAAAAAAAQAAAAAAAAAAAAp8NmAgAAbwAAAAAAAAAgBNHUZgIAAAIAAAJmAgAAIBZr1GYCAAAPzADD/X8AAA=="/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAACQ6tCqvQAAAEAM2N1mAgAAIAAAAAAAAABIyjbdZgIAACwDisNmAgAAbwAAAAAAAADA1YDqZgIAADA6VtRmAgAAAgAAAAAAAAAQAAAAAAAAAAAAp8NmAgAAbwAAAAAAAABAAtHUZgIAACAAACBmAgAAMBnY3WYCAAD60gAo/X8AAA=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
