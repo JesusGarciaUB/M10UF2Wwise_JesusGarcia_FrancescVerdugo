@@ -31,7 +31,7 @@
 				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="lFlyiPOXA064g3mxYoMm1A=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="52RVIw1W3kCyfY1GeOvodA=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
@@ -42,7 +42,7 @@
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{E6C3EC16-3161-43B3-AAE0-6F9C7DB95811}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
-				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAAAAAKfDZgIAALFHHVP9fwAAAwAAAAAAAAAAAIrDZgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBJqctmAgAA8Jc63WYCAAAAAAAAAAAAAOCbOt1mAgAAsUcdU/1/AABACJPDZgIAAAAAisNmAgAAkIGNy2YCAAAAAAAAAAAAAA=="/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADJfQX3/H8AAAEAAAAAAAAAW/CgUP1/AACQvIUvOAIAACBUrB84AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXYMF9/x/AACAXu0vOAIAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=="/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{031E1E2C-DC25-4332-80C3-FFCC371AC803}" Type="string" Value="ewBEADQAMwA4AEYAOQA2ADYALQA2ADEAMQA1AC0ANABEADcANwAtAEEARQAyADAALQBCAEYANQBGADYAMgAyADYAMQA5ADgARgB9AAAAAQE="/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{2C4AAF74-B3D9-4645-A2D7-7C4A3E0C54EF}" Type="string" Value="ewBCADUARQBCADgAQQA2ADkALQA1AEUAOQA5AC0ANABGADcANwAtADgAQwBEADcALQAyAEQANQBDAEUAQgBCADIAOAAyADEANAB9AAAAAQE="/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{D5805147-985E-4C5B-B817-369AF1B7184D}" Type="string" Value="ewBCADUARQBCADgAQQA2ADkALQA1AEUAOQA5AC0ANABGADcANwAtADgAQwBEADcALQAyAEQANQBDAEUAQgBCADIAOAAyADEANAB9AAAAAQE="/>
