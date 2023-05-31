@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="M10UF2AA2-JesusGarcia-FrancescVerdugo" GUID="{6249836F-05E1-4D65-A0DD-67A65CB018E7}" Generator="2022.1.4.8202"/>
+	<CacheRoot>../.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Windows" GUID="{88725994-97F3-4E03-B883-79B1628326D4}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{BD837A21-74F2-4D1A-A9B5-AD3216124EF8}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{9972EFD8-3660-AAA7-DCD3-1C51DC15FE77}</FileHash>
+</ProjectInfo>
