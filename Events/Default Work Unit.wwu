@@ -319,6 +319,12 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Player" ID="{CBC1E676-A3D4-49C2-A0CD-EB87D3E99950}" ShortID="288689234">
+					<ChildrenList>
+						<Event Name="Player_Footstep" ID="{6EEE446B-391E-44B8-B66A-092C2C166CD7}"/>
+						<Event Name="Player_WeaponImpact" ID="{533248E0-3E0F-4CBF-99D3-BC153CB8B42E}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
